@@ -79,6 +79,7 @@ Use feat for a feature, fix for a bug fix, or an appropriate other type for othe
             instructions=instructions,
             input=f"Generate a commit message for this git diff:\n\n{diff}",
             reasoning={"effort": "none"},
+			text={"verbosity": "high"},
 			temperature=0,
 			max_output_tokens=32768,
 			service_tier="flex",
